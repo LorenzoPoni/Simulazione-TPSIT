@@ -8,3 +8,8 @@ class Sensore:
     def __str__(self) -> str:
         return f"Codice: {self.codice}, grandezza: {self.grandezza}, unita: {self.unita}, soglia massima: {self.soglia_massima}"
     
+
+if __name__ == "__main__":
+    
+    sensore1 = Sensore("TEMP-01", "Temperatura", "C", "10.0")
+    print(sensore1.__str__())
